@@ -1,0 +1,133 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+.admin-wrapper {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #111827;
+    padding-top: 10px;
+}
+
+.sidebar h5 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #1f2937;
+    color: #fff;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 30px;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+/* PAGE TITLE */
+.page-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+/* DASHBOARD CARDS */
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.dash-card {
+    background: #fff;
+    width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.dash-card:hover {
+    transform: translateY(-6px);
+}
+
+.dash-card p {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.dash-card h2 {
+    font-size: 32px;
+    color: #111827;
+}
+
+/* CARD COLORS */
+.dash-card.stays {
+    border-left: 6px solid #3b82f6;
+}
+
+.dash-card.bookings {
+    border-left: 6px solid #10b981;
+}
+
+.dash-card.pending {
+    border-left: 6px solid #f59e0b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .admin-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .dashboard-cards {
+        justify-content: center;
+    }
+}
+
+/* RECENT BOOKINGS SECTION */
+.recent-bookings {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.recent-bookings h4 {
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+
+
