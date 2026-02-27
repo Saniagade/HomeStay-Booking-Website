@@ -60,12 +60,6 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Username = 'your-email@gmail.com';
 $mail->Password = 'your-app-password';
 Run the project
+
 Open in browser:
-
 http://localhost/homestays-booking-website/
-
-
-
-
-```bash
-git clone https://github.com/your-username/homestays-booking-website.git
